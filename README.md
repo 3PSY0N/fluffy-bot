@@ -24,6 +24,27 @@ In order to be able to contribute to this project, you need the following knowle
 Your code, commits, comments, issues and pull requests **must be written completely in English**.
 You must respect the [**Commit Message Guidelines**](#commit-message-guidelines).
 
+You must also **document** each method with [**jsdoc**](https://jsdoc.app/) and they must **contain** the tag ``@author``
+All methods and variables must also be **typed with Typescript** and you must have **no ESLINT errors.**
+
+Example : 
+```ts
+  /**
+   * Match command from registered commands and execute it.
+   *
+   * Args and prefix of the command are automatically extracted and formatted
+   * @param {Message} message - The message of the event
+   * @param commandContext - Arguments which will be passed in the commandContext
+   * @author Mishaa <mishapro@mm.st>
+   * @example
+   *
+   * eventManager.bindEvent('message', (message: Message) // Message.content = ping
+   * => commandHandler.matchCommandFromEvent(message));
+   * // If a command named ping has been loaded, the command will be executed
+   */
+  public matchCommandFromEvent(message: Message, commandContext: Record<string, any> = {}): void
+```
+
 
 ## Code of conduct
 As contributors and maintainers of the Fluffy project, we pledge to respect everyone who contributes by posting issues, updating documentation, submitting pull requests, providing feedback in comments, and any other activities.
