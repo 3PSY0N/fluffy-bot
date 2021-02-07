@@ -19,7 +19,6 @@ In order to be able to contribute to this project, you need the following knowle
 - Basic knowledge of **Git**
 - Intermediate knowledge of **Javascript**
 - Intermediate knowledge of **Typescript**
-- Basic knowledge of **Git**
 - Basic knowledge of the **Unit Test concept**
 
 Your code, commits, comments, issues and pull requests **must be written completely in English**.
